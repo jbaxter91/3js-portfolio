@@ -126,6 +126,10 @@
   transform: translateZ(0);
 }
 
+.logo{
+  background-color: white;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {
