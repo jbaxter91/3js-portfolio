@@ -21,14 +21,14 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import c1 from "./company/c1.png";
+import eridian from "./company/eridian.png";
+import magicdarts from "./company/magicdarts.png";
+import ucberkeley from "./company/ucberkeley.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import azdarts from "./azdarts.png";
+import chromenotes from "./chromenotes.png";
+import supersimilar from "./supersimilar.png";
 
 export {
   logo,
@@ -52,11 +52,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  c1,
+  eridian,
+  magicdarts,
+  ucberkeley,
+  azdarts,
+  chromenotes,
+  supersimilar,
 };
