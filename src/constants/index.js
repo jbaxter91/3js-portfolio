@@ -101,8 +101,7 @@ import {
       icon: eridian,
       iconBg: "#383E56",
       date: "July 2015 to May 2018",
-      points: [
-        "Managed a team of developers in creating a 2D side-scroller game for kids, achieving successful launch on Google Play.",
+      points: ["Managed a team of developers in creating a 2D side-scroller game for kids, achieving successful launch on Google Play.",
         "Utilized Unity game engine and AI expertise to develop engaging and interactive gameplay experiences.",
         "Developed tools inside Unity to help non technical users generate content faster.",
         ],
@@ -113,8 +112,7 @@ import {
       icon: magicdarts,
       iconBg: "#E6DEDD",
       date: "Sept 2017 to Mar 2022",
-      points: [
-        "Migrated e-commerce website from Miva to Shopify, learning Shopify's Liquid programming language to ensure seamless transition.",
+      points: ["Migrated e-commerce website from Miva to Shopify, learning Shopify's Liquid programming language to ensure seamless transition.",
         "Designed and implemented a warehouse BIN system, reducing average order picking time from 1 minute to 10 seconds per item and enabling a reduction of order pickers from 8 to 2 per day.",
         "Fixed search bar bug and added predictive search features, reducing bounce rate by almost half.",
         "Overhauled website for SEO best practices and built a WordPress blog to boost SEO, resulting in a significant improvement in Google rank for key search terms, with most now achieving the number one position.",
@@ -126,8 +124,7 @@ import {
       icon: ucberkeley,
       iconBg: "#383E56",
       date: "Jan 2021 to Mar 2022",
-      points: [
-        "Facilitated a 24-week full stack web development Boot Camp using JavaScript, SQL, MongoDB, leading students to acquire industry-ready skills.",
+      points: ["Facilitated a 24-week full stack web development Boot Camp using JavaScript, SQL, MongoDB, leading students to acquire industry-ready skills.",
         "Provided one-on-one mentoring to students, resulting in successful career transitions, including a student hired at Google.",
         "Monitored student progress and provided actionable feedback, fostering a continuous improvement mindset.",
         ],
@@ -138,8 +135,7 @@ import {
       icon: c1,
       iconBg: "#E6DEDD",
       date: "May 2022 - Present",
-      points: [
-        "Designed and implemented an API server leveraging Trello for automated calls and emails to sites 2 weeks and 2 days ahead of job date, reducing cold call hours from 80 to 5 hours per week.",
+      points: ["Designed and implemented an API server leveraging Trello for automated calls and emails to sites 2 weeks and 2 days ahead of job date, reducing cold call hours from 80 to 5 hours per week.",
         "Designed custom google sheets script to automatically sync cards with rows in their google sheet, saving hundreds of manhours per contract.",
         "Developed Google Sheets functions to automatically build schedules for 40 technicians, saving 10 hours of manual work per week."
     ],
