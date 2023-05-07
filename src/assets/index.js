@@ -4,6 +4,8 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import url from "./url.png";
+import youtube from "./youtube.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -29,6 +31,9 @@ import ucberkeley from "./company/ucberkeley.png";
 import azdarts from "./azdarts.png";
 import chromenotes from "./chromenotes.png";
 import supersimilar from "./supersimilar.png";
+import murphy from "./murphy.png";
+import ironlotus from "./ironlotus.png";
+import littlefish from "./littlefish.jpg";
 
 export {
   logo,
@@ -37,6 +42,8 @@ export {
   mobile,
   web,
   github,
+  url,
+  youtube,
   menu,
   close,
   css,
@@ -59,4 +66,7 @@ export {
   azdarts,
   chromenotes,
   supersimilar,
+  murphy,
+  ironlotus,
+  littlefish,
 };
