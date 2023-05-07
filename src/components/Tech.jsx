@@ -1,6 +1,8 @@
-import { BallCanvas} from './canvas';
-import { SectionWrapper } from '../hoc';
-import { technologies } from '../constants';
+import React from "react";
+
+import { BallCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { technologies } from "../constants";
 
 const Tech = () => {
   return (
@@ -11,7 +13,7 @@ const Tech = () => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Tech, "tech");
+export default SectionWrapper(Tech, "");

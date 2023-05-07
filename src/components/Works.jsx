@@ -100,7 +100,7 @@ const Works = () => {
         <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          The Projects section of this website showcases a diverse collection of creative and technical endeavors. 
+          The Projects section of this website showcases a diverse collection of creative and technical endeavors.
           By exploring captivating images and accessing relevant links to code repositories or live websites, 
           visitors can gain insights into the depth and breadth of work completed. This curated selection 
           highlights proficiency in various fields, while demonstrating the ability to tackle challenges, 
