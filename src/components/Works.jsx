@@ -25,11 +25,11 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, d
           className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 gap-1 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 gap-1 card-img_hover '>
           {source_code_link ? 
             <div onClick={() => window.open
               (source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer transition duration-200 hover:scale-110'
               >
                 <img 
                 src={github}
@@ -42,7 +42,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, d
               {deployed_link ? 
             <div onClick={() => window.open
               (deployed_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer transition duration-200 hover:scale-110'
               >
                 <img 
                 src={url}
@@ -55,7 +55,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, d
             {youtube_link ? 
             <div onClick={() => window.open
               (youtube_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer transition duration-200 hover:scale-110'
               >
                 <img 
                 src={youtube}
