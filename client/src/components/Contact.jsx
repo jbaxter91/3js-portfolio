@@ -8,7 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 
-const Contact = () => {
+const Contact = ({isMobile}) => {
+
+  console.log(isMobile)
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -66,6 +69,18 @@ const Contact = () => {
   };
 
   return (
+
+    <motion.section
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      >
+        <span className='hash-span' id={"contact"}>
+          &nbsp;
+        </span>
+
+
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
@@ -123,15 +138,23 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
+      
 
-      <motion.div
+    {/* Earth Model Render Section */}
+      {isMobile ? "" : <EarthModel/>}
+    
+    </div>
+    </motion.section>
+  )
+}
+
+const EarthModel = () => (
+  <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
       </motion.div>
-    </div>
-  )
-}
+)
 
-export default SectionWrapper(Contact, 'contact');
+export default Contact;

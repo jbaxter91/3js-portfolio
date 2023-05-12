@@ -17,7 +17,7 @@ const SectionWrapper = (Component, idName) =>
           &nbsp;
         </span>
 
-        <Component />
+        <Component/>
       </motion.section>
     );
   };
