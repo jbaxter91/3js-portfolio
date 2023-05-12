@@ -10,8 +10,6 @@ import { slideIn } from "../utils/motion";
 
 const Contact = ({isMobile}) => {
 
-  console.log(isMobile)
-
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",

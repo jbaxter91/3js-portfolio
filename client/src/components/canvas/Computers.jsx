@@ -29,8 +29,7 @@ const Computers = () => {
   );
 };
 
-const ComputersCanvas = ({isMobile}) => {
-  console.log(isMobile)
+const ComputersCanvas = () => {
 
   return (
     <Canvas
@@ -46,7 +45,7 @@ const ComputersCanvas = ({isMobile}) => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Computers />
       </Suspense>
 
       <Preload all />
