@@ -1,6 +1,7 @@
 import {
   backend,
   web,
+  gamedev,
   javascript,
   typescript,
   html,
@@ -46,6 +47,10 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "Game Developer",
+    icon: gamedev,
   },
 ];
 
