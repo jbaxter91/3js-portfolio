@@ -1,11 +1,37 @@
 import { motion } from "framer-motion";
+import React, { Suspense, useEffect, useState } from "react";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 900px)");
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+
+
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full ${isMobile ? "h-[25rem]" : "h-screen"} mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -19,10 +45,16 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop web applications, manage hosting,<br className='sm:block hidden'/> and automate business aspects.  <br className='sm:block hidden'/>But mostly I am a Full Stack Developer</p>
         </div>
       </div>
+      {isMobile ? "" : <ModelDisplay/>}
+    </section>
+  );
+};
 
-      <ComputersCanvas />
+const ModelDisplay = () => (
+<>
+  <ComputersCanvas/>
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+  <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
@@ -39,8 +71,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </section>
-  );
-};
+</>
+)
 
 export default Hero;

@@ -10,7 +10,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 
 const ProjectCard = ({index, name, description, tags, image, source_code_link, deployed_link, youtube_link}) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div>
       <Tilt options={{
         max: 45,
         scale: 1,
@@ -94,17 +94,15 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, d
 const Works = () => {
   return (
     <>
-    <motion.div
-      variants={textVariant()}
-      >
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+     <motion.div>
+        <p className={`${styles.sectionSubText} `}>My work</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex'>
         <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-'
+        >
           The Projects section of this website showcases a diverse collection of creative and technical endeavors.
           By exploring captivating images and accessing relevant links to code repositories or live websites, 
           visitors can gain insights into the depth and breadth of work completed. This curated selection 
@@ -117,8 +115,7 @@ const Works = () => {
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
-          ))}
-
+        ))}
       </div>
     
     </>
