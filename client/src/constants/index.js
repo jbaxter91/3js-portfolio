@@ -155,7 +155,7 @@ const testimonials = [
     name: "Paula Pritchett",
     designation: "CEO",
     company: "C1 Techs",
-    image: "http://randomuser.me/api/portraits/women/65.jpg",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
   },
   {
     testimonial:
@@ -163,7 +163,7 @@ const testimonials = [
     name: "Tom Bellenger",
     designation: "Software Engineer II",
     company: "Google",
-    image: "http://randomuser.me/api/portraits/men/19.jpg",
+    image: "https://randomuser.me/api/portraits/men/19.jpg",
   },
   {
     testimonial:
@@ -171,7 +171,7 @@ const testimonials = [
     name: "Tori Sowders",
     designation: "CTO",
     company: "Magic Darts Inc",
-    image: "http://randomuser.me/api/portraits/women/7.jpg",
+    image: "https://randomuser.me/api/portraits/women/7.jpg",
   },
 ];
 
